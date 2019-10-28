@@ -1,0 +1,17 @@
+body {
+    background-color:#C6E2FF
+}
+
+#submit {
+    margin: 5px;
+}
+
+.block {
+    float: left;
+    width: 90%;
+    margin: 5px;
+}
+
+.devour {
+    float: right;
+}
