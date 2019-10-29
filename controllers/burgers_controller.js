@@ -15,15 +15,15 @@ router.get("/", function(req, res) {
     });
 });
 
-router.post("/api/burgers", function(req, res) {
-    console.log("here");
+router.post("/api/burgers/", function(req, res) {
+    console.log(req.body.burger_name);
     burger.insertOne("burger_name", req.body.burger_name, function(result) {
-        console.log(req.body.burger_name);
         res.json({ id: result.insertId });
     });
 });
 
 router.put("/api/burgers/:id", function(req, res) {
+    console.log("putting")
     var condition = "id = " + req.params.id;
     burger.updateOne({devoured: true}, condition, function(result) {
         if (result.changedRows == 0) {

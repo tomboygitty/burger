@@ -1,5 +1,11 @@
 body {
-    background-color:#C6E2FF
+    background-color:#C6E2FF;
+    font-family: 'Open Sans', sans-serif;
+}
+
+textarea {
+    width: 350px;
+    height: 80px;
 }
 
 #submit {
@@ -14,4 +20,9 @@ body {
 
 .devour {
     float: right;
+}
+
+img {
+    height: auto;
+    max-width: 150px;
 }
